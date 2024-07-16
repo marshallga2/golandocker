@@ -17,7 +17,7 @@ cat << EOF > /usr/local/etc/trojan-go/config.json
   "remote_addr": "yahoo.com",
   "remote_port": 80,
   "log_level": 5,
-  "password": ["94f32cfdf7855"],
+  "password": ["$UUID"],
   "tcp": {
     "no_delay": true,
     "keep_alive": true,
@@ -31,7 +31,7 @@ cat << EOF > /usr/local/etc/trojan-go/config.json
   },
   "websocket": {
     "enabled": true,
-    "path": "/94f32cfdf7855",
+    "path": "/$UUID",
     "host": ""
   },
   "transport_plugin": {
