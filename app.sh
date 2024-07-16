@@ -17,7 +17,7 @@ cat << EOF > /usr/local/etc/trojan-go/config.json
   "remote_addr": "127.0.0.1",
   "remote_port": 80,
   "log_level": 5,
-  "password": ["$UUID"],
+  "password": ["94f32cfdf7855"],
   "tcp": {
     "no_delay": true,
     "keep_alive": true,
@@ -31,7 +31,7 @@ cat << EOF > /usr/local/etc/trojan-go/config.json
   },
   "websocket": {
     "enabled": true,
-    "path": "/$UUID",
+    "path": "/94f32cfdf7855",
     "host": ""
   },
   "transport_plugin": {
